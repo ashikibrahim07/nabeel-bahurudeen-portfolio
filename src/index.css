@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 relative inline-block;
+  }
+
+  .section-title::after {
+    content: "";
+    @apply block absolute w-full h-[3px] bg-primary mt-2;
+  }
+
+  .neon-border {
+    @apply border border-primary rounded-lg shadow-neon;
+  }
+
+  .neon-border-secondary {
+    @apply border border-secondary rounded-lg shadow-neon-secondary;
+  }
+
+  .neon-border-accent {
+    @apply border border-accent rounded-lg shadow-neon-accent;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-primary-600 text-background rounded-lg font-medium hover:bg-primary-500 transition-colors shadow-neon;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 bg-transparent border border-primary text-primary rounded-lg font-medium hover:bg-primary hover:text-background transition-colors shadow-neon;
+  }
+
+  .nav-link {
+    @apply relative px-3 py-2 hover:text-primary transition-colors;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute left-0 bottom-0 w-0 h-[2px] bg-primary transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .nav-link.active {
+    @apply text-primary;
+  }
+
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .tech-pill {
+    @apply px-3 py-1 bg-background border border-primary-400 rounded-full text-sm text-primary-400;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-600;
+}
