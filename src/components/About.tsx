@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Check, File, MapPin, Briefcase, Clock, Wrench } from "lucide-react";
+import {
+  Check,
+  FileText,
+  MapPin,
+  Briefcase,
+  Clock,
+  Wrench,
+} from "lucide-react";
+import nabeelBahurudeenResume from "../assets/Nabeel_Bahurudeen_Resume.pdf";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -41,6 +49,18 @@ const About = () => {
     { icon: <Wrench size={24} />, label: "Design Solutions", value: "10+" },
     { icon: <MapPin size={24} />, label: "Countries Worked In", value: "2" },
   ];
+
+  const buttonVariants = {
+    initial: { scale: 1 },
+    hover: {
+      scale: 1,
+      boxShadow: "0 0 15px rgba(0, 255, 187, 0.7)",
+      transition: {
+        duration: 0.3,
+        yoyo: Infinity,
+      },
+    },
+  };
 
   return (
     <section id="about" className="py-20 relative">
@@ -161,11 +181,16 @@ const About = () => {
             </motion.div>
 
             <motion.a
-              variants={itemVariants}
-              href="#"
-              className="inline-flex items-center gap-2 text-primary hover:text-primary-400 transition-colors"
+              href={nabeelBahurudeenResume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary flex items-center justify-center gap-2 w-full sm:w-auto"
+              variants={buttonVariants}
+              initial="initial"
+              whileHover="hover"
+              whileTap={{ scale: 0.95 }}
             >
-              <File size={18} />
+              <FileText size={18} />
               <span>Download Resume</span>
             </motion.a>
           </div>
