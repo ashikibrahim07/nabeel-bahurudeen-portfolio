@@ -40,7 +40,7 @@ const Footer = () => {
               reserved.
             </p>
             <p className="mt-1 text-foreground/50 text-xs">
-              Design and developed by <a href="https://ashik-ibrahim.vercel.app/" target="_blank" rel="noopener noreferrer">Ashik Ibrahim S</a>
+              Design and developed by <a href="https://ashik-ibrahim.vercel.app/" target="_blank" rel="noopener noreferrer"><span className="text-primary">Ashik Ibrahim S</span></a>
             </p>
           </div>
         </div>

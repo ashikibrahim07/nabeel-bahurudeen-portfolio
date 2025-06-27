@@ -47,7 +47,7 @@ const Loader = () => {
       </div>
 
       <motion.p
-        className="mt-8 text-primary text-xl font-mono"
+        className="mt-8 text-primary text-xl font-mono ml-8"
         variants={textVariants}
         initial="initial"
         animate="animate"
