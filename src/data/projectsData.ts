@@ -32,7 +32,7 @@ export const projectsData: Project[] = [
     title: "Oil & Gas Pipeline Support System",
     category: "Structural Design",
     date: "2021",
-    image: "https://images.pexels.com/photos/12321987/pexels-photo-12321987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://images.pexels.com/photos/17816971/pexels-photo-17816971.jpeg",
     shortDescription: "Designed and engineered specialized support systems for a 25-kilometer high-pressure pipeline installation.",
     description: "Developed custom pipeline support and anchoring systems for a critical 25-kilometer high-pressure oil transport pipeline. The project required innovative solutions to address challenging terrain, extreme temperature variations, and seismic considerations in accordance with international standards.",
     challenges: [
