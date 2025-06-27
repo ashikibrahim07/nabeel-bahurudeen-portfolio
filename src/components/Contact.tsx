@@ -10,7 +10,7 @@ import {
   Github as GitHub,
   Twitter,
 } from "lucide-react";
-import credlyIcon from "../assets/icons8-credly-32.png";
+import { SiCredly } from "react-icons/si";
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -30,7 +30,6 @@ const Contact = () => {
   const [error, setError] = useState("");
 
   const YOUR_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
-  console.log(YOUR_ACCESS_KEY);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -47,7 +46,6 @@ const Contact = () => {
     setError("");
 
     try {
-      // Replace 'YOUR_ACCESS_KEY' with your Web3Forms access key
       const formData = new FormData();
       formData.append("access_key", YOUR_ACCESS_KEY);
       formData.append("name", formState.name);
@@ -347,7 +345,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-background flex items-center justify-center border border-primary/30 text-primary hover:bg-primary hover:text-background transition-colors"
                 >
-                  <img src={credlyIcon} alt="Credly Icon" />
+                  <SiCredly className="w-6 h-6" />
                 </a>
               </div>
             </motion.div>

@@ -22,7 +22,15 @@ const Header = () => {
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
   }, [isOpen]);
 
   const navItems = [
@@ -38,8 +46,8 @@ const Header = () => {
   return (
     <motion.header
       className={`fixed w-full top-0 z-40 transition-all duration-300 ${
-        scrolled
-          ? "bg-background/80 backdrop-blur-md shadow-neon"
+        scrolled && !isOpen
+          ? "bg-background/90 backdrop-blur-md shadow-neon"
           : "bg-transparent"
       }`}
       initial={{ y: -100 }}

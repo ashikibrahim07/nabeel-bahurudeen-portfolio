@@ -106,8 +106,7 @@ const Hero = () => {
             animate="visible"
             custom={2}
           >
-            <span className="text-secondary">Mechanical Engineer</span> at Sraco
-            Saudi Arabia
+            <span className="text-secondary">Mechanical Engineer</span> at  <a href="https://sraco.com.sa/" target="_blank" rel="noopener noreferrer">Sraco Saudi Arabia</a>
           </motion.h2>
 
           <motion.p

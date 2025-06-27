@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
@@ -10,15 +9,47 @@ import {
   Wrench,
 } from "lucide-react";
 import nabeelBahurudeenResume from "../assets/Nabeel_Bahurudeen_Resume.pdf";
+import { useEffect, useState } from "react";
 
 const About = () => {
+  const [experience, setExperience] = useState('0+');
+
+  const calculateExperience = () => {
+    const startDate = new Date('2024-02-01');
+    const currentDate = new Date();
+    
+    const yearDiff = currentDate.getFullYear() - startDate.getFullYear();
+    const monthDiff = currentDate.getMonth() - startDate.getMonth();
+    
+    const totalMonths = yearDiff * 12 + monthDiff;
+    const years = totalMonths / 12;
+    
+    if (years < 1) {
+      return `${totalMonths}+`;
+    } else if (years < 2) {
+      return `${years.toFixed(1)}+`;
+    } else {
+      return `${Math.floor(years)}+`;
+    }
+  };
+
+  useEffect(() => {
+    setExperience(calculateExperience());
+    
+    const interval = setInterval(() => {
+      setExperience(calculateExperience());
+    }, 24 * 60 * 60 * 1000);
+    
+    return () => clearInterval(interval);
+  }, []);
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   const profileImage =
-    "https://media-hosting.imagekit.io/1524c17dbb374664/pexels-pixabay-45201.jpg?Expires=1839760776&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=BZYLVrVOIUiuyGJIiwPAjZvGDJUIEVfOm5XTzlSBxd3hpx2VsMvzS7nNITxvq-GmsvkzoSjIrYLdlBMFvDUNaL1FpHryKzG~eqMWCE9SWC7FDawaMbm04XHkag5SnL~YoNN64A3KKPBQkvJzXX8K4Gtpf3Ahf8cLjE~5Vt5LMKlyiCPNU8kXsKz6R8zdqbe3g4-HwgAmCeYPCnzJBoZbilrmhbA8fr8yqaEa-3RMBPrA6s5yLF8Uvg9LlVbs0fZt9c3br6~W7~4NAnfTzGLX5b8fuvLfo-MHmTmJPyP5b-FpE4r0n1zWsBjejF9fwQV0nurffdVwlmc0CMuhir2Waw__";
+    "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg";
 
   const sectionVariants = {
     hidden: { opacity: 0 },
@@ -40,7 +71,7 @@ const About = () => {
   };
 
   const statsItems = [
-    { icon: <Clock size={24} />, label: "Years of Experience", value: "1.3+" },
+    { icon: <Clock size={24} />, label: "Years of Experience", value: experience },
     {
       icon: <Briefcase size={24} />,
       label: "Projects Completed",

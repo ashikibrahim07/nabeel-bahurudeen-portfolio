@@ -19,7 +19,7 @@ const Footer = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Nabeel Bahurudeen
+              <span className="cursor-pointer" onClick={handleScrollToTop}>Nabeel Bahurudeen</span>
             </motion.div>
             <p className="mt-2 text-foreground/60 max-w-md">
               Mechanical engineering excellence with a focus on innovation,
@@ -38,6 +38,9 @@ const Footer = () => {
             <p className="text-foreground/60 text-sm">
               © {new Date().getFullYear()} Nabeel Bahurudeen. All rights
               reserved.
+            </p>
+            <p className="mt-1 text-foreground/50 text-xs">
+              Design and developed by <a href="https://ashik-ibrahim.vercel.app/" target="_blank" rel="noopener noreferrer">Ashik Ibrahim S</a>
             </p>
           </div>
         </div>
