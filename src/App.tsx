@@ -11,6 +11,7 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
+import Partners from "./components/Partners";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -40,6 +41,7 @@ function App() {
             <Experience />
             <Skills />
             <Projects />
+            <Partners />
             <Education />
             <Contact />
           </main>
