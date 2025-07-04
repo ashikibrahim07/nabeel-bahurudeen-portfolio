@@ -69,7 +69,7 @@ const Education = () => {
                   variants={itemVariants}
                   className="relative"
                 >
-                  <div className="absolute -left-[41px] top-0 w-5 h-5 bg-background border-2 border-primary rounded-full"></div>
+                  <div className="absolute -left-[43px] top-0 w-5 h-5 bg-background border-2 border-primary rounded-full"></div>
                   <div className="border border-primary/30 p-5 rounded-lg bg-background/40 backdrop-blur hover:shadow-neon transition-shadow">
                     <span className="inline-flex items-center gap-2 text-sm font-mono text-primary mb-2">
                       <Calendar size={14} />

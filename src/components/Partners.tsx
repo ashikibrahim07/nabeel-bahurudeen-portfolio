@@ -27,13 +27,7 @@ const Partners = () => {
     },
   };
 
-  const duplicatedPartners = [
-    ...partnersData,
-    ...partnersData,
-    ...partnersData,
-    ...partnersData,
-    ...partnersData,
-  ];
+  const duplicatedPartners = [...partnersData, ...partnersData];
 
   return (
     <section id="partners" className="py-20">
@@ -65,40 +59,10 @@ const Partners = () => {
             companies, from industry leaders to innovative startups.
           </motion.p>
         </motion.div>
-
-        <motion.div
-          className="relative overflow-hidden py-8"
-          variants={sectionVariants}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-        >
-          {/* <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-gray-900 to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-gray-900 to-transparent z-10"></div> */}
-
-          <motion.div
-            className="flex space-x-8"
-            animate={{
-              x: [0, -216 * partnersData.length],
-            }}
-            transition={{
-              x: {
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: 25,
-                ease: "linear",
-              },
-            }}
-            style={{
-              width: `${216 * duplicatedPartners.length}px`,
-            }}
-          >
+        <div className="partners-marquee-outer py-8">
+          <div className="partners-marquee-track">
             {duplicatedPartners.map((partner, index) => (
-              <motion.div
-                key={index}
-                className="flex-shrink-0 group"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.2 }}
-              >
+              <div key={index} className="partner-card group">
                 <div className="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-primary/30 min-w-[200px] hover:bg-primary/10">
                   <div className="flex flex-col items-center space-y-4">
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center overflow-hidden">
@@ -113,10 +77,10 @@ const Partners = () => {
                     </h3>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   );

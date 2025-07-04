@@ -55,47 +55,4 @@ export const experienceData: ExperienceItem[] = [
       "Technical Documentation",
     ],
   },
-  // {
-  //   title: "Mechanical Engineer",
-  //   company: "Al-Rashid Trading & Contracting",
-  //   location: "Riyadh, Saudi Arabia",
-  //   period: "Jun 2015 - Feb 2017",
-  //   employmentType: "Full-time",
-  //   responsibilities: [
-  //     "Designed mechanical components and systems for construction and infrastructure projects",
-  //     "Performed load calculations and stress analysis for structural elements",
-  //     "Created technical drawings and specifications for fabrication and installation",
-  //     "Collaborated with project managers to ensure timely delivery of mechanical components",
-  //     "Conducted quality inspections of mechanical installations and equipment",
-  //     "Provided technical support to installation teams during construction phases",
-  //   ],
-  //   technologies: [
-  //     "AutoCAD",
-  //     "HVAC Design",
-  //     "Pump Systems",
-  //     "Mechanical Fabrication",
-  //     "Quality Control",
-  //   ],
-  // },
-  // {
-  //   title: "Junior Mechanical Engineer",
-  //   company: "United Engineering Services",
-  //   location: "Cairo, Egypt",
-  //   period: "Aug 2013 - May 2015",
-  //   employmentType: "Full-time",
-  //   responsibilities: [
-  //     "Assisted senior engineers in designing mechanical systems for commercial buildings",
-  //     "Prepared technical drawings and specifications under supervision",
-  //     "Participated in site surveys and data collection for new projects",
-  //     "Conducted basic engineering calculations for equipment sizing",
-  //     "Supported the preparation of technical documentation and reports",
-  //     "Helped coordinate with contractors and suppliers for project implementation",
-  //   ],
-  //   technologies: [
-  //     "AutoCAD",
-  //     "Basic 3D Modeling",
-  //     "Engineering Calculations",
-  //     "Technical Documentation",
-  //   ],
-  // },
-];
+  ];

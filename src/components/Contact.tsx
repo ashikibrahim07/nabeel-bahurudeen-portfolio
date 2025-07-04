@@ -4,11 +4,8 @@ import { useInView } from "react-intersection-observer";
 import {
   AtSign,
   MapPin,
-  Phone,
   Send,
   Linkedin,
-  Github as GitHub,
-  Twitter,
 } from "lucide-react";
 import { SiCredly } from "react-icons/si";
 

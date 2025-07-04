@@ -73,6 +73,23 @@
   .tech-pill {
     @apply px-3 py-1 bg-background border border-primary-400 rounded-full text-sm text-primary-400;
   }
+
+  .partners-marquee-outer {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .partners-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+  }
+
+  .partner-card {
+    flex: 0 0 auto;
+    margin-right: 2rem;
+  }
 }
 
 /* Custom scrollbar */
@@ -90,4 +107,13 @@
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary-600;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
