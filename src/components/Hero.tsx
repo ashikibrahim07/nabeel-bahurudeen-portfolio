@@ -86,7 +86,7 @@ const Hero = () => {
             animate="visible"
             custom={0}
           >
-            Hello, my name is
+            Hi,
           </motion.div>
 
           <motion.h1
@@ -106,7 +106,17 @@ const Hero = () => {
             animate="visible"
             custom={2}
           >
-            <span className="text-secondary">Mechanical Engineer</span> at  <a href="https://sraco.com.sa/" target="_blank" rel="noopener noreferrer">Sraco Saudi Arabia</a>
+            <span className="text-secondary">
+              Mechanical Engineer | MEP Specialist
+            </span>{" "}
+            at{" "}
+            <a
+              href="https://sraco.com.sa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              SRACO, Saudi Arabia
+            </a>
           </motion.h2>
 
           <motion.p
@@ -116,11 +126,12 @@ const Hero = () => {
             animate="visible"
             custom={3}
           >
-            I am a skilled Mechanical Engineer with expertise in HVAC,
-            firefighting, plumbing, and mechanical design, specializing in
-            construction and oil & gas projects. I excel in procurement, site
-            management, and ensuring compliance with project specifications and
-            completion on time.
+            I bring hands-on experience in HVAC, Fire protection, Plumbing, and
+            Mechanical design — with a focus on large-scale construction and oil
+            & gas infrastructure. I specialize in turning complex technical
+            requirements into safe, efficient, and regulation-compliant
+            engineering solutions. From shop drawings to system commissioning, I
+            deliver precision, performance, and on-time execution.
           </motion.p>
 
           <motion.div
