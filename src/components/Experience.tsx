@@ -109,7 +109,7 @@ const Experience = () => {
               <div className="flex flex-col sm:flex-row gap-4 mb-6">
                 <div className="flex items-center gap-2 text-sm text-foreground/70">
                   <BriefcaseBusiness size={16} className="text-primary" />
-                  <span>{experienceData[selectedJob].company}</span>
+                  <span onClick={() => window.open(experienceData[selectedJob].link, "_blank")} className='cursor-pointer'>{experienceData[selectedJob].company}</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-foreground/70">
                   <MapPin size={16} className="text-primary" />
@@ -138,7 +138,7 @@ const Experience = () => {
 
               {experienceData[selectedJob].technologies && (
                 <div className="mt-6">
-                  <p className="text-sm font-medium mb-2">Technologies & Tools:</p>
+                  <p className="text-sm font-medium mb-2">{experienceData[selectedJob].isLucasTVS ? "Skills:" : "Technologies & Engineering Toolset:"}</p>
                   <div className="flex flex-wrap gap-2">
                     {experienceData[selectedJob].technologies.map((tech, i) => (
                       <motion.span 
