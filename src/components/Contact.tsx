@@ -1,12 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import {
-  AtSign,
-  MapPin,
-  Send,
-  Linkedin,
-} from "lucide-react";
+import { AtSign, MapPin, Send, Linkedin } from "lucide-react";
 import { SiCredly } from "react-icons/si";
 
 const Contact = () => {
@@ -59,7 +54,6 @@ const Contact = () => {
 
       if (data.success) {
         setSubmitted(true);
-        // Reset form after submission
         setFormState({
           name: "",
           email: "",
@@ -67,7 +61,6 @@ const Contact = () => {
           message: "",
         });
 
-        // Reset success message after 5 seconds
         setTimeout(() => setSubmitted(false), 5000);
       } else {
         throw new Error(data.message || "Form submission failed");
