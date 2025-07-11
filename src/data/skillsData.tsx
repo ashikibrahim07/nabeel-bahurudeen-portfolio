@@ -25,10 +25,10 @@ export const skillsData: SkillCategory[] = [
       { name: "Firefighting Systems Installation & Testing", level: 85 },
       { name: "Testing, Balancing & Commissioning (T&C)", level: 90 },
       { name: "QA/QC Process Implementation (WIR, MIR, ITPs)", level: 90 },
-      { name: "Utility Coordination (Drainage, Water, Gas)", level: 85 }
+      { name: "Utility Coordination (Drainage, Water, Gas)", level: 85 },
+      { name: "HSE & Risk Management (OSHA / NEBOSH-aligned)", level: 95 }
     ],
     tools: [
-      { name: "AutoCAD MEP", icon: <Ruler size={24} /> },
       { name: "Revit MEP", icon: <Cpu size={24} /> },
       { name: "Carrier HAP", icon: <Lightbulb size={24} /> },
       { name: "Autodesk Plant 3D", icon: <Activity size={24} /> }
@@ -58,11 +58,12 @@ export const skillsData: SkillCategory[] = [
       { name: "Revit MEP (BIM Modeling)", level: 85 },
       { name: "Carrier HAP Load Calculations", level: 85 },
       { name: "Technical Drawing Interpretation", level: 95 },
-      { name: "Navisworks (Clash Detection & Coordination)", level: 75 }
+      { name: "Navisworks (Clash Detection & Coordination)", level: 75 },
+      { name: "Shop Drawing Generation & Approval", level: 100 },
+      { name: "Model-Based Quantity Takeoff (QTO)", level: 95 }
     ],
     tools: [
       { name: "AutoCAD MEP", icon: <Ruler size={24} /> },
-      { name: "Revit MEP", icon: <Cpu size={24} /> },
       { name: "Navisworks Manage", icon: <Activity size={24} /> },
       { name: "Bluebeam Revu", icon: <Lightbulb size={24} /> }
     ]
@@ -87,7 +88,8 @@ export const skillsData: SkillCategory[] = [
       { name: "Machining Processes (CNC, Milling)", level: 80 },
       { name: "Welding & Joining Techniques", level: 75 },
       { name: "Prototyping & Assembly Trials", level: 80 },
-      { name: "Tooling Design (Jigs & Fixtures)", level: 70 }
+      { name: "Tooling Design (Jigs & Fixtures)", level: 70 },
+      { name: "Decision-Making Under Pressure", level: 95 }
     ],
     tools: [
       { name: "SCADA Systems", icon: <Database size={24} /> }
@@ -105,5 +107,17 @@ export const skillsData: SkillCategory[] = [
     tools: [
       { name: "Microsoft Excel (Advanced + VBA)", icon: <Database size={24} /> }
     ]
+  },
+  {
+    category: "Technical Calculation & Documentation Tools",
+    skills: [
+      { name: "Pipe & Duct Sizing", level: 90 },
+      { name: "Heat Load & Ventilation Calculation", level: 100 },
+      { name: "Pump Head & Static Pressure Calculations", level: 95 },
+      { name: "Solar Water Heating System Design and Collector Sizing", level: 95 },
+      { name: "Design Compliance Reports", level: 95 },
+      { name: "MEP Calculation Sheets", level: 95 },
+      { name: "Technical Submittals & Data Sheets", level: 85 }
+    ],
   }
 ];

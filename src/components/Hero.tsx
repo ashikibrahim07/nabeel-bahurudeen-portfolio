@@ -79,28 +79,18 @@ const Hero = () => {
 
       <div className="container-custom relative z-10">
         <div className="max-w-3xl">
-          <motion.div
-            className="text-sm md:text-base font-mono text-primary mb-2"
-            variants={textVariants}
-            initial="hidden"
-            animate="visible"
-            custom={0}
-          >
-            Hi,
-          </motion.div>
-
           <motion.h1
-            className="text-4xl md:text-6xl font-bold mb-2 text-foreground"
+            className="text-4xl md:text-6xl font-bold mb-2 text-foreground whitespace-nowrap"
             variants={textVariants}
             initial="hidden"
             animate="visible"
             custom={1}
           >
-            Nabeel Bahurudeen
+            <span className="text-sm md:text-base font-mono text-primary mb-2">Hi, I'm</span> Nabeel Bahurudeen.
           </motion.h1>
 
           <motion.h2
-            className="text-2xl md:text-4xl font-bold mb-6 text-foreground/80"
+            className="text-2xl md:text-4xl font-bold mb-6 text-foreground/80 whitespace-nowrap"
             variants={textVariants}
             initial="hidden"
             animate="visible"
@@ -126,12 +116,7 @@ const Hero = () => {
             animate="visible"
             custom={3}
           >
-            I bring hands-on experience in HVAC, Fire protection, Plumbing, and
-            Mechanical design — with a focus on large-scale construction and oil
-            & gas infrastructure. I specialize in turning complex technical
-            requirements into safe, efficient, and regulation-compliant
-            engineering solutions. From shop drawings to system commissioning, I
-            deliver precision, performance, and on-time execution.
+            I bring hands-on experience in HVAC, Fire protection, Plumbing, and Mechanical design — with a focus on large-scale construction and oil & gas infrastructure. I specialize in turning complex technical requirements into safe, efficient, and regulation-compliant engineering solutions. From shop drawings to system commissioning, I deliver precision, performance, and on-time execution. 
           </motion.p>
 
           <motion.div

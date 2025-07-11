@@ -162,7 +162,7 @@ const About = () => {
             </motion.span>
 
             <motion.h2 variants={itemVariants} className="section-title">
-              Transforming Ideas into Engineering Reality
+              Transforming Ideas into Reality
             </motion.h2>
 
             <motion.p
@@ -170,7 +170,7 @@ const About = () => {
               className="mb-6 text-foreground/80"
             >
               {aboutData.aboutMe.map((item, index) => (
-                <p key={index} className="mb-6 text-foreground/80">
+                <p key={index} className="mb-6 text-foreground/80 text-justify">
                   {item}
                 </p>
               ))}
