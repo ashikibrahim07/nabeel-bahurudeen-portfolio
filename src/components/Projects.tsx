@@ -125,7 +125,7 @@ const Projects = () => {
               onClick={() => setSelectedProject(null)}
             >
               <motion.div
-                className="relative bg-background border border-primary max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-lg shadow-neon"
+                className="relative bg-background border border-primary max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-lg shadow-neon rounded-tr rounded-br"
                 variants={modalVariants}
                 initial="hidden"
                 animate="visible"

@@ -11,6 +11,7 @@ import {
 import nabeelBahurudeenResume from "../assets/Nabeel_Bahurudeen_Resume.pdf";
 import { useEffect, useState } from "react";
 import { aboutData } from "../data/aboutData";
+import profileImage from "../assets/nabeel_portfolio_profile.jpeg";
 
 const About = () => {
   const [experience, setExperience] = useState("0+");
@@ -49,8 +50,6 @@ const About = () => {
     threshold: 0.1,
   });
 
-  const profileImage =
-    "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg";
 
   const sectionVariants = {
     hidden: { opacity: 0 },

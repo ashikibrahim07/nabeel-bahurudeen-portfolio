@@ -78,7 +78,7 @@ const Hero = () => {
       </div>
 
       <div className="container-custom relative z-10">
-        <div className="max-w-3xl">
+        <div className="max-w-6xl">
           <motion.h1
             className="text-4xl md:text-6xl font-bold mb-2 text-foreground whitespace-nowrap"
             variants={textVariants}
@@ -86,11 +86,11 @@ const Hero = () => {
             animate="visible"
             custom={1}
           >
-            <span className="text-sm md:text-base font-mono text-primary mb-2">Hi, I'm</span> Nabeel Bahurudeen.
+            <span className="text-sm md:text-[25px] font-mono text-primary mb-2">Hi, I'm</span><br /> Nabeel Bahurudeen.
           </motion.h1>
 
           <motion.h2
-            className="text-2xl md:text-4xl font-bold mb-6 text-foreground/80 whitespace-nowrap"
+            className="text-2xl md:text-4xl font-bold mb-6 text-foreground/80"
             variants={textVariants}
             initial="hidden"
             animate="visible"
@@ -110,7 +110,7 @@ const Hero = () => {
           </motion.h2>
 
           <motion.p
-            className="text-base md:text-lg mb-8 text-foreground/70 max-w-2xl"
+            className="text-base md:text-lg mb-8 text-foreground/70 max-w-full text-justify"
             variants={textVariants}
             initial="hidden"
             animate="visible"

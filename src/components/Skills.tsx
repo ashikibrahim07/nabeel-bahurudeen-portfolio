@@ -176,7 +176,7 @@ const Skills = () => {
                   </div>
 
                   {/* Desktop layout */}
-                  <div className="hidden md:flex flex-col items-center space-y-6">
+                  <div className="hidden md:flex flex-col items-center space-y-6 cursor-pointer">
                     {rows.map((row, rowIdx) => (
                       <div
                         key={rowIdx}

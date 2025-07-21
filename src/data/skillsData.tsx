@@ -25,8 +25,7 @@ export const skillsData: SkillCategory[] = [
       { name: "Firefighting Systems Installation & Testing", level: 85 },
       { name: "Testing, Balancing & Commissioning (T&C)", level: 90 },
       { name: "QA/QC Process Implementation (WIR, MIR, ITPs)", level: 90 },
-      { name: "Utility Coordination (Drainage, Water, Gas)", level: 85 },
-      { name: "HSE & Risk Management (OSHA / NEBOSH-aligned)", level: 95 }
+      { name: "Utility Coordination (Drainage, Water, Gas)", level: 85 }
     ],
     tools: [
       { name: "Revit MEP", icon: <Cpu size={24} /> },
@@ -42,7 +41,8 @@ export const skillsData: SkillCategory[] = [
       { name: "Quality Control & Work Inspections", level: 90 },
       { name: "Team Leadership & Decision-Making", level: 90 },
       { name: "Budget & Material Resource Management", level: 85 },
-      { name: "Risk Assessment & Mitigation", level: 90 }
+      { name: "Risk Assessment & Mitigation", level: 90 },
+      { name: "HSE & Risk Management (OSHA / NEBOSH-aligned)", level: 95 }
     ],
     tools: [
       { name: "Primavera P6", icon: <Users size={24} /> },
@@ -81,34 +81,6 @@ export const skillsData: SkillCategory[] = [
     ]
   },
   {
-    category: "Engineering & Manufacturing (Fabrication)",
-    skills: [
-      { name: "Production & Workflow Planning", level: 85 },
-      { name: "Fabrication Oversight (Sheet Metal, Piping)", level: 80 },
-      { name: "Machining Processes (CNC, Milling)", level: 80 },
-      { name: "Welding & Joining Techniques", level: 75 },
-      { name: "Prototyping & Assembly Trials", level: 80 },
-      { name: "Tooling Design (Jigs & Fixtures)", level: 70 },
-      { name: "Decision-Making Under Pressure", level: 95 }
-    ],
-    tools: [
-      { name: "SCADA Systems", icon: <Database size={24} /> }
-    ]
-  },
-  {
-    category: "Soft Skills & Stakeholder Management",
-    skills: [
-      { name: "Technical Communication & Documentation", level: 90 },
-      { name: "Problem Solving & Troubleshooting", level: 95 },
-      { name: "Client & Consultant Management", level: 85 },
-      { name: "Cross-cultural Team Collaboration", level: 85 },
-      { name: "Mentoring & Peer Training", level: 85 }
-    ],
-    tools: [
-      { name: "Microsoft Excel (Advanced + VBA)", icon: <Database size={24} /> }
-    ]
-  },
-  {
     category: "Technical Calculation & Documentation Tools",
     skills: [
       { name: "Pipe & Duct Sizing", level: 90 },
@@ -119,5 +91,19 @@ export const skillsData: SkillCategory[] = [
       { name: "MEP Calculation Sheets", level: 95 },
       { name: "Technical Submittals & Data Sheets", level: 85 }
     ],
-  }
+  },
+  {
+    category: "Soft Skills & Stakeholder Management",
+    skills: [
+      { name: "Technical Communication & Documentation", level: 90 },
+      { name: "Problem Solving & Troubleshooting", level: 95 },
+      { name: "Client & Consultant Management", level: 85 },
+      { name: "Cross-cultural Team Collaboration", level: 85 },
+      { name: "Mentoring & Peer Training", level: 85 },
+      { name: "Decision-Making Under Pressure", level: 95 }
+    ],
+    tools: [
+      { name: "Microsoft Excel (Advanced + VBA)", icon: <Database size={24} /> }
+    ]
+  },
 ];
